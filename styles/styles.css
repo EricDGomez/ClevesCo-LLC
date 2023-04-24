@@ -2,13 +2,33 @@
   display: none;
 }
 
-/* header {
-  background: linear-gradient(
-    312.73deg,
-    rgba(217, 217, 217, 0.44) 17.61%,
-    rgba(217, 217, 217, 0) 55.85%
+/* Logo and links */
+
+.header {
+  background-image: url(/img/TDC-Herman-Miller-Cafe.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  z-index: 1;
+  position: relative;
+}
+
+.header::before {
+  background-image: linear-gradient(
+    30deg,
+    rgba(14, 18, 26, 0.8) 0%,
+    rgba(0, 0, 0, 0.2) 100%
   );
-} */
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  content: "";
+}
 
 .top_header {
   display: flex;
@@ -46,4 +66,38 @@
 hr {
   margin: 18px 6px;
   color: var(--color-black);
+}
+
+/* main header */
+
+.bottom_header {
+  display: flex;
+  margin: 100px auto;
+  max-width: 1110px;
+  justify-content: center;
+  align-items: center;
+  color: var(--color-gold);
+}
+
+.header_text {
+  text-shadow: 1px 1px var(--color-black);
+  margin-left: 73px;
+}
+
+.header_text h1 {
+  font-size: 68px;
+  text-transform: uppercase;
+}
+
+.header_text p {
+  font-size: 40px;
+  max-width: 800px;
+}
+
+.cleves_img img {
+  width: 600px;
+  height: 600px;
+  margin-right: 50px;
+  margin-left: -200px;
+  margin-bottom: 30px;
 }
