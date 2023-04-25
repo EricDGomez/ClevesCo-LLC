@@ -4,6 +4,17 @@
 
 /* Logo and links */
 
+@keyframes reveal {
+  0% {
+    opacity: 0;
+    transform: scale(0.8);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
 .header {
   background-image: url(/img/TDC-Herman-Miller-Cafe.jpg);
   background-size: cover;
@@ -43,6 +54,11 @@
   margin-left: -213px;
 }
 
+.logo {
+  opacity: 0;
+  animation: reveal 2s forwards;
+}
+
 .links {
   display: flex;
   flex-direction: row;
@@ -50,6 +66,7 @@
   width: 324px;
   margin-top: 54px;
   list-style: none;
+  animation: reveal 2s forwards;
 }
 
 .links a {
@@ -100,4 +117,5 @@ hr {
   margin-right: 50px;
   margin-left: -200px;
   margin-bottom: 30px;
+  animation: reveal 2s forwards;
 }
