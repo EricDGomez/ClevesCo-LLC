@@ -47,6 +47,22 @@
   justify-content: space-around;
 }
 
+.navbar-toggler {
+  position: absolute;
+  right: 20px;
+  top: 10px;
+  outline: none;
+  background-color: transparent;
+  border: 1px solid transparent;
+}
+
+.navbar-toggler span {
+  color: white;
+  font-size: 20px;
+  cursor: pointer;
+  pointer-events: none;
+}
+
 .logo img {
   width: 500px;
   height: 81px;
@@ -63,6 +79,7 @@
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+
   width: 324px;
   margin-top: 54px;
   list-style: none;
@@ -81,7 +98,7 @@
 }
 
 hr {
-  margin: 18px 6px;
+  margin: 38px 6px;
   color: var(--color-black);
 }
 
@@ -118,4 +135,66 @@ hr {
   margin-left: -200px;
   margin-bottom: 30px;
   animation: reveal 2s forwards;
+}
+
+/* logos */
+
+.logos {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+
+  margin: auto;
+}
+
+.logos div {
+  margin: 60px auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo {
+  width: 166px;
+  height: 74px;
+}
+/* Articles */
+
+.relevant_articles {
+  display: flex;
+  max-width: 1500px;
+  margin: 100px auto;
+  gap: 18px;
+  justify-content: space-around;
+  align-items: flex-start;
+  margin-bottom: 100px;
+}
+
+.articles {
+  height: 260px;
+  box-shadow: 3px 4px 9px 0px var(--color-black);
+  padding: 10px;
+  background-color: #f1f3f5;
+  display: flex;
+  flex-direction: column;
+  gap: 11px;
+}
+
+.articles h1 {
+  font-size: 19px;
+  color: #212529;
+}
+
+.articles p {
+  line-height: 21px;
+}
+
+.articles a {
+  text-decoration: none;
+  color: var(--color-black);
+  width: 100px;
+}
+
+.articles a:hover {
+  color: var(--color-gold);
+  font-weight: 600;
 }

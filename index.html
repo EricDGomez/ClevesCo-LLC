@@ -43,7 +43,7 @@
         <div class="header_text">
           <h1>We choose you!</h1>
           <p>
-            "Empowering Your Business Growth in Florida: ClevesCo -
+            "Empowering Your Business Growth from Florida: ClevesCo -
             <br />
             Your Premier Consulting Partner for Strategic Solutions and
             Professional Development Opportunities"
@@ -51,5 +51,123 @@
         </div>
       </section>
     </header>
+    <div class="container logos">
+      <div>
+        <img
+          src="/img/Logos for Eric/TDC Companies/TDC_LS.png"
+          alt="TDC Companies"
+          class="logo"
+        />
+      </div>
+      <div>
+        <img
+          src="/img/Logos for Eric/TDC IA/IA_LS.png"
+          alt="TDC IA"
+          class="logo"
+        />
+      </div>
+      <div>
+        <img
+          src="/img/Logos for Eric/TDC Life/Life_LS.png"
+          alt="TDC Life"
+          class="logo"
+        />
+      </div>
+      <div>
+        <img
+          src="/img/Logos for Eric/TFO Marketing Group/TMG_Logo.png"
+          alt="TFO Marketing Group"
+          class="logo"
+        />
+      </div>
+      <div>
+        <img
+          src="/img/Logos for Eric/TFO Phoenix/TFO Phoenix - Full.png"
+          alt="TFO Phoenix"
+          class="logo"
+        />
+      </div>
+      <div>
+        <img
+          src="/img/Logos for Eric/TFO Trust Company/TFO_Trust_Company_LS.png"
+          alt="TFO Trust Company"
+          class="logo"
+        />
+      </div>
+      <div>
+        <img
+          src="/img/Logos for Eric/RightTrak/RightTrak.png"
+          alt="RightTrack"
+          class="logo"
+        />
+      </div>
+    </div>
+    <main class="container">
+      <section class="video"></section>
+      <section class="relevant_articles">
+        <article class="articles">
+          <h1>
+            Game changer: How Cleves Delp is building the agency of the future
+          </h1>
+          <p>
+            Cleves Delp has taken his father’s agency from a small firm focused
+            on helping affluent clients with life insurance to a multi-business
+            behemoth with offices around the country. Today, Toledo, Ohio-based
+            TDC Companies still targets the wealthy — but it helps them with
+            everything from life and high-end property and casualty insurance to
+            investment and retirement planning.
+          </p>
+
+          <a
+            href="https://www.thinkadvisor.com/2013/05/29/game-changer-how-cleves-delp-is-building-the-agency-of-the-future/"
+            >Read More</a
+          >
+        </article>
+        <article class="articles">
+          <h1>Three Things To Consider When Choosing A Trustee</h1>
+          <p>
+            Given the important functions a trustee serves in the care and
+            control of trust property and the relationship they have to
+            beneficiaries of a trust, the selection of a trustee should not be
+            taken lightly. In choosing a trustee, the most important thing is
+            trust. A grantor should seek a trustee with expertise in their roles
+            and who will create stability in the management of the trust and
+            most effectively protect and manage the trust's assets.
+          </p>
+
+          <a
+            href="https://www.forbes.com/sites/forbesfinancecouncil/2021/02/05/three-things-to-consider-when-choosing-a-trustee/?sh=26685ef4f277"
+            >Read More</a
+          >
+        </article>
+        <article class="articles">
+          <h1>Strength Center Named for Rocket Fans</h1>
+          <p>
+            An area in the Larimer Athletic Complex will be named for Rocket
+            fans in recognition of their support of The University of Toledo’s
+            athletic program. The John J. Delp Strength and Conditioning Center
+            will be named in honor of John J. Delp, the father of Cleves Delp
+            who, with his wife, Kathleen, gave a $230,500 gift to Rocket
+            Athletics to support capital improvements.
+          </p>
+
+          <a
+            href="https://news.utoledo.edu/index.php/02_10_2021/strength-center-named-for-rocket-fans"
+            >Read More</a
+          >
+        </article>
+      </section>
+    </main>
+    <script>
+      const navButton = document.querySelector("button[aria-expanded]");
+
+      function toggleNav({ target }) {
+        const expanded =
+          target.getAttribute("aria-expanded") === "true" || false;
+        navButton.setAttribute("aria-expanded", !expanded);
+      }
+
+      navButton.addEventListener("click", toggleNav);
+    </script>
   </body>
 </html>
